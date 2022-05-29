@@ -26,6 +26,11 @@ public class BasePage {
         }
     }
 
+    public void openPage(String url){
+
+        driver.get(url);
+    }
+
     public void clickElement(By locator){
         try {
             WebDriverWait wait = new WebDriverWait(driver,timeout);

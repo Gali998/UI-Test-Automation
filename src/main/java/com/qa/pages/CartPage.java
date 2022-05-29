@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class CartPage extends BasePage {
 
-    private static final By CART_ICON = By.linkText("2");
+    private static final By CART_ICON = By.id("shopping_cart_container");
 
     private static final By CHECKOUT = By.id("checkout");
 
