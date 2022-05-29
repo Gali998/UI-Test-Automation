@@ -11,6 +11,8 @@ public class InventoryPage extends BasePage {
 
     private static final By ADD_CART_BTN = By.id("add-to-cart-sauce-labs-backpack");
 
+    private static final By BACK_TO_PRODUCTS = By.id("back-to-products");
+
     public boolean isInventoryVisible(){
         return isVisible(INVENTORY);
     }
@@ -21,6 +23,10 @@ public class InventoryPage extends BasePage {
 
     public void clickAddToCart(){
         clickElement(ADD_CART_BTN);
+    }
+
+    public void clickBackToProducts(){
+        clickElement(BACK_TO_PRODUCTS);
     }
 
 
