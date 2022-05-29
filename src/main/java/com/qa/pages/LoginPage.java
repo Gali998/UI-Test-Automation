@@ -19,4 +19,5 @@ public class LoginPage extends BasePage {
     public void clickLogin(){
         clickElement(LOGIN_BTN);
     }
+
 }

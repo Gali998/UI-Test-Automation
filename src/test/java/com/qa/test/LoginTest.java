@@ -33,5 +33,13 @@ public class LoginTest extends BaseTest {
 
     }
 
+    @Test
+    public void invalidCredentials(){
+        openPage("https://www.saucedemo.com/");
+        loginPage.enterCredentials("standard_user","123");
+        loginPage.clickLogin();
+        Assert.assertTrue(inventoryPage.isInventoryVisible(),"Inventory page not loaded");
+    }
+
 
 }
