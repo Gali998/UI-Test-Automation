@@ -1,4 +1,21 @@
 package com.qa.base;
 
-public class BaseTest {
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
+public class BaseTest extends BasePage{
+
+    @BeforeSuite
+    public void beforeSuite(){
+        initWebDriver();
+    }
+
+    @AfterSuite
+    public void afterSuite(){
+        quitWebDriver();
+
+    }
+
+
+
 }
