@@ -31,12 +31,6 @@ public class LoginTest extends BaseTest {
         cartPage.clickCartIcon();
         cartPage.clickCheckout();
 
-
-
-
-
-
-
     }
 
 
